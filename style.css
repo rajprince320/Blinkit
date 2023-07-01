@@ -105,8 +105,13 @@ footer{
 input:focus[type="text"]{
     outline: none;
 }
+.my-footer{
+    display: none;
+    padding-top: 150px;
+    opacity: 0.5;
+}
 @media (max-width: 1020px) {
-    .hero-1, .hero-2,.brand-logo,.my-cart,.login,.items{
+    .hero-1, .hero-2,.brand-logo,.my-cart,.login,.items,.linkss,.main{
         display: none !important;
     }
     .search {
@@ -123,5 +128,9 @@ input:focus[type="text"]{
     .time{
         padding-left: 15px !important;
     }
+    .my-footer{
+        display: block;
+    }
+    
     
 }
