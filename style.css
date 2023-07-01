@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    touch-action: auto;
+}
+.my-nav{
+    display: flex;
+    border: 0.2px solid rgb(233, 233, 233);
+    justify-content: space-between;
+}
+.search{
+    border-radius: 15px;
+    background-color: #f8f8f8f8;
+    width: 40%;
+    padding: 15px;
+    cursor: text;
+    border: 0.2px solid rgb(233, 233, 233);
+}
+.brand-logo{
+    padding: 25px;
+    padding-right: 35px;
+    border-right: 1px solid #DEE2E6;
+}
+
+.brand-logo:hover{
+    background-color: #DEE2E6;
+    cursor: grab;
+}
+.my-cart{
+    background-color: #0C831F !important;
+}
+.login{
+    background-color: #DEE2E6;
+    cursor: grab;
+}
+.hero-1{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.hero-2{
+    display: flex;
+    overflow-x: auto;
+    width: 90vw;
+    justify-content: center;
+    margin-inline: auto;
+}
+.list{
+    width: 100%;
+    margin-inline: auto;
+    white-space: nowrap;
+}
+.list>img{
+    padding: 10px;
+}
+::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+.profile{
+    display: none;
+}
+.time{
+    padding-left: 30px;
+}
+.cardss{
+    margin-left: 5px;
+    
+}
+.card{
+    height: 320px !important;
+    width: 200px !important;
+}
+
+ul{
+    color: #5e5e5f;
+    list-style: none;
+    line-height: 30px;
+}
+.details{
+    gap: 290px;
+}
+.useful-links ul li a{
+    text-decoration: none;
+    color: #5e5e5f;
+}
+.categories-links ul li a{
+    text-decoration: none;
+    color: #5e5e5f;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+input:focus[type="text"]{
+    outline: none;
+}
+@media (max-width: 1020px) {
+    .hero-1, .hero-2,.brand-logo,.my-cart,.login,.items{
+        display: none !important;
+    }
+    .search {
+        width: 100% !important;
+    }
+    .my-nav{
+        display: block !important;
+        border-bottom: none !important;
+        padding-bottom: 10px;
+    }
+    .profile{
+        display: block;
+    }
+    .time{
+        padding-left: 15px !important;
+    }
+    
+}
